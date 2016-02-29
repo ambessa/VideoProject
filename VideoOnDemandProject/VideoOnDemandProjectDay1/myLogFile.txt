@@ -1,0 +1,1 @@
+12:58:42,539 [9] ERROR program.cs - Attempted to divide by zero. 
