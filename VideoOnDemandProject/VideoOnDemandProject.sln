@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A5B72E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideosOnDemandProjectTestsDay1", "VideosOnDemandProjectTestsDay1\VideosOnDemandProjectTestsDay1.csproj", "{331562AA-B41C-42D6-9420-8F127AEF2AB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideosOnDemandEntityDatabase", "VideosOnDemandEntityDatabase\VideosOnDemandEntityDatabase.csproj", "{67BB1665-3FA5-439C-8D9A-A7138B98782D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{331562AA-B41C-42D6-9420-8F127AEF2AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331562AA-B41C-42D6-9420-8F127AEF2AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331562AA-B41C-42D6-9420-8F127AEF2AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BB1665-3FA5-439C-8D9A-A7138B98782D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BB1665-3FA5-439C-8D9A-A7138B98782D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BB1665-3FA5-439C-8D9A-A7138B98782D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BB1665-3FA5-439C-8D9A-A7138B98782D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

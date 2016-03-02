@@ -9,3 +9,14 @@ C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoOnDemandProject\VideoOnDem
 C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\VideoOnDemandProjectDay1.exe.config
 C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\obj\Debug\VideoOnDemandProjectDay1.exe
 C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\obj\Debug\VideoOnDemandProjectDay1.pdb
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\obj\Debug\VideoOnDemandProjectDay1.csprojResolveAssemblyReference.cache
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\VideoOnDemandProjectDay1.exe
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\VideoOnDemandProjectDay1.pdb
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\log4net.dll
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\log4net.xml
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\VideosOnDemandEntityDatabase.dll
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\EntityFramework.dll
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\VideosOnDemandEntityDatabase.pdb
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\EntityFramework.xml
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideoOnDemandProjectDay1\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="278e6de15e384110b410b898f1cc1977" Name="Diagram1">
+        <EntityTypeShape EntityType="videosOnDemandModel.actor" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="videosOnDemandModel.director" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="videosOnDemandModel.film" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="videosOnDemandModel.genre" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="videosOnDemandModel.television" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="videosOnDemandModel.username" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <AssociationConnector Association="videosOnDemandModel.FK__actor__fk_film_i__0EA330E9" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__actor__fk_televi__0F975522" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__director__fk_fil__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__director__fk_tel__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__film__fk_genre_i__0519C6AF" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__username__fk_fil__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__televisio__fk_ge__09DE7BCC" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__username__fk_gen__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="videosOnDemandModel.FK__username__fk_tel__1BFD2C07" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

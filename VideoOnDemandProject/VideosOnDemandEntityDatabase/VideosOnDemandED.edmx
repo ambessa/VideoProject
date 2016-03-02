@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="videosOnDemandModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="actor">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="first_name" Type="varchar" MaxLength="255" />
+          <Property Name="last_name" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="255" />
+          <Property Name="fk_film_id" Type="int" />
+          <Property Name="fk_television_id" Type="int" />
+        </EntityType>
+        <EntityType Name="director">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="first_name" Type="varchar" MaxLength="255" />
+          <Property Name="last_name" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="255" />
+          <Property Name="fk_film_id" Type="int" />
+          <Property Name="fk_television_id" Type="int" />
+        </EntityType>
+        <EntityType Name="film">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="length_minute" Type="int" />
+          <Property Name="release_date" Type="date" />
+          <Property Name="fk_genre_id" Type="int" />
+        </EntityType>
+        <EntityType Name="genre">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="television">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="number_of_seasons" Type="int" />
+          <Property Name="number_of_episodes" Type="int" />
+          <Property Name="length_minute" Type="int" />
+          <Property Name="release_date" Type="date" />
+          <Property Name="fk_genre_id" Type="int" />
+        </EntityType>
+        <EntityType Name="username">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="hours_watched" Type="int" />
+          <Property Name="subscription" Type="varchar" MaxLength="255" />
+          <Property Name="fk_genre_id" Type="int" />
+          <Property Name="fk_film_id" Type="int" />
+          <Property Name="fk_television_id" Type="int" />
+        </EntityType>
+        <Association Name="FK__actor__fk_film_i__0EA330E9">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="actor" Type="Self.actor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="actor">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__actor__fk_televi__0F975522">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="actor" Type="Self.actor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="actor">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__director__fk_fil__145C0A3F">
+          <End Role="film" Type="Self.film" Multiplicity="0..1" />
+          <End Role="director" Type="Self.director" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="film">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="director">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__director__fk_tel__15502E78">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="director" Type="Self.director" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="director">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__film__fk_genre_i__0519C6AF">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="film" Type="Self.film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="film">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__televisio__fk_ge__09DE7BCC">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="television" Type="Self.television" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="television">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_fil__1B0907CE">
+          <End Role="film" Type="Self.film" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="film">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_gen__1A14E395">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_tel__1BFD2C07">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="videosOnDemandModelStoreContainer">
+          <EntitySet Name="actor" EntityType="Self.actor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="director" EntityType="Self.director" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="film" EntityType="Self.film" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="genre" EntityType="Self.genre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="television" EntityType="Self.television" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="username" EntityType="Self.username" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__actor__fk_film_i__0EA330E9" Association="Self.FK__actor__fk_film_i__0EA330E9">
+            <End Role="genre" EntitySet="genre" />
+            <End Role="actor" EntitySet="actor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__actor__fk_televi__0F975522" Association="Self.FK__actor__fk_televi__0F975522">
+            <End Role="television" EntitySet="television" />
+            <End Role="actor" EntitySet="actor" />
+          </AssociationSet>
+          <AssociationSet Name="FK__director__fk_fil__145C0A3F" Association="Self.FK__director__fk_fil__145C0A3F">
+            <End Role="film" EntitySet="film" />
+            <End Role="director" EntitySet="director" />
+          </AssociationSet>
+          <AssociationSet Name="FK__director__fk_tel__15502E78" Association="Self.FK__director__fk_tel__15502E78">
+            <End Role="television" EntitySet="television" />
+            <End Role="director" EntitySet="director" />
+          </AssociationSet>
+          <AssociationSet Name="FK__film__fk_genre_i__0519C6AF" Association="Self.FK__film__fk_genre_i__0519C6AF">
+            <End Role="genre" EntitySet="genre" />
+            <End Role="film" EntitySet="film" />
+          </AssociationSet>
+          <AssociationSet Name="FK__televisio__fk_ge__09DE7BCC" Association="Self.FK__televisio__fk_ge__09DE7BCC">
+            <End Role="genre" EntitySet="genre" />
+            <End Role="television" EntitySet="television" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_fil__1B0907CE" Association="Self.FK__username__fk_fil__1B0907CE">
+            <End Role="film" EntitySet="film" />
+            <End Role="username" EntitySet="username" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_gen__1A14E395" Association="Self.FK__username__fk_gen__1A14E395">
+            <End Role="genre" EntitySet="genre" />
+            <End Role="username" EntitySet="username" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_tel__1BFD2C07" Association="Self.FK__username__fk_tel__1BFD2C07">
+            <End Role="television" EntitySet="television" />
+            <End Role="username" EntitySet="username" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="videosOnDemandModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="actor">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="first_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="last_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="fk_film_id" Type="Int32" />
+          <Property Name="fk_television_id" Type="Int32" />
+          <NavigationProperty Name="genre" Relationship="Self.FK__actor__fk_film_i__0EA330E9" FromRole="actor" ToRole="genre" />
+          <NavigationProperty Name="television" Relationship="Self.FK__actor__fk_televi__0F975522" FromRole="actor" ToRole="television" />
+        </EntityType>
+        <EntityType Name="director">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="first_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="last_name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="fk_film_id" Type="Int32" />
+          <Property Name="fk_television_id" Type="Int32" />
+          <NavigationProperty Name="film" Relationship="Self.FK__director__fk_fil__145C0A3F" FromRole="director" ToRole="film" />
+          <NavigationProperty Name="television" Relationship="Self.FK__director__fk_tel__15502E78" FromRole="director" ToRole="television" />
+        </EntityType>
+        <EntityType Name="film">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="length_minute" Type="Int32" />
+          <Property Name="release_date" Type="DateTime" Precision="0" />
+          <Property Name="fk_genre_id" Type="Int32" />
+          <NavigationProperty Name="directors" Relationship="Self.FK__director__fk_fil__145C0A3F" FromRole="film" ToRole="director" />
+          <NavigationProperty Name="genre" Relationship="Self.FK__film__fk_genre_i__0519C6AF" FromRole="film" ToRole="genre" />
+          <NavigationProperty Name="usernames" Relationship="Self.FK__username__fk_fil__1B0907CE" FromRole="film" ToRole="username" />
+        </EntityType>
+        <EntityType Name="genre">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="actors" Relationship="Self.FK__actor__fk_film_i__0EA330E9" FromRole="genre" ToRole="actor" />
+          <NavigationProperty Name="films" Relationship="Self.FK__film__fk_genre_i__0519C6AF" FromRole="genre" ToRole="film" />
+          <NavigationProperty Name="televisions" Relationship="Self.FK__televisio__fk_ge__09DE7BCC" FromRole="genre" ToRole="television" />
+          <NavigationProperty Name="usernames" Relationship="Self.FK__username__fk_gen__1A14E395" FromRole="genre" ToRole="username" />
+        </EntityType>
+        <EntityType Name="television">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="number_of_seasons" Type="Int32" />
+          <Property Name="number_of_episodes" Type="Int32" />
+          <Property Name="length_minute" Type="Int32" />
+          <Property Name="release_date" Type="DateTime" Precision="0" />
+          <Property Name="fk_genre_id" Type="Int32" />
+          <NavigationProperty Name="actors" Relationship="Self.FK__actor__fk_televi__0F975522" FromRole="television" ToRole="actor" />
+          <NavigationProperty Name="directors" Relationship="Self.FK__director__fk_tel__15502E78" FromRole="television" ToRole="director" />
+          <NavigationProperty Name="genre" Relationship="Self.FK__televisio__fk_ge__09DE7BCC" FromRole="television" ToRole="genre" />
+          <NavigationProperty Name="usernames" Relationship="Self.FK__username__fk_tel__1BFD2C07" FromRole="television" ToRole="username" />
+        </EntityType>
+        <EntityType Name="username">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="hours_watched" Type="Int32" />
+          <Property Name="subscription" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="fk_genre_id" Type="Int32" />
+          <Property Name="fk_film_id" Type="Int32" />
+          <Property Name="fk_television_id" Type="Int32" />
+          <NavigationProperty Name="film" Relationship="Self.FK__username__fk_fil__1B0907CE" FromRole="username" ToRole="film" />
+          <NavigationProperty Name="genre" Relationship="Self.FK__username__fk_gen__1A14E395" FromRole="username" ToRole="genre" />
+          <NavigationProperty Name="television" Relationship="Self.FK__username__fk_tel__1BFD2C07" FromRole="username" ToRole="television" />
+        </EntityType>
+        <Association Name="FK__actor__fk_film_i__0EA330E9">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="actor" Type="Self.actor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="actor">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__actor__fk_televi__0F975522">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="actor" Type="Self.actor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="actor">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__director__fk_fil__145C0A3F">
+          <End Role="film" Type="Self.film" Multiplicity="0..1" />
+          <End Role="director" Type="Self.director" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="film">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="director">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__director__fk_tel__15502E78">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="director" Type="Self.director" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="director">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__film__fk_genre_i__0519C6AF">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="film" Type="Self.film" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="film">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_fil__1B0907CE">
+          <End Role="film" Type="Self.film" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="film">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_film_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__televisio__fk_ge__09DE7BCC">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="television" Type="Self.television" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="television">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_gen__1A14E395">
+          <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="genre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_genre_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__username__fk_tel__1BFD2C07">
+          <End Role="television" Type="Self.television" Multiplicity="0..1" />
+          <End Role="username" Type="Self.username" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="television">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="username">
+              <PropertyRef Name="fk_television_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="videosOnDemandEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="actors" EntityType="Self.actor" />
+          <EntitySet Name="directors" EntityType="Self.director" />
+          <EntitySet Name="films" EntityType="Self.film" />
+          <EntitySet Name="genres" EntityType="Self.genre" />
+          <EntitySet Name="televisions" EntityType="Self.television" />
+          <EntitySet Name="usernames" EntityType="Self.username" />
+          <AssociationSet Name="FK__actor__fk_film_i__0EA330E9" Association="Self.FK__actor__fk_film_i__0EA330E9">
+            <End Role="genre" EntitySet="genres" />
+            <End Role="actor" EntitySet="actors" />
+          </AssociationSet>
+          <AssociationSet Name="FK__actor__fk_televi__0F975522" Association="Self.FK__actor__fk_televi__0F975522">
+            <End Role="television" EntitySet="televisions" />
+            <End Role="actor" EntitySet="actors" />
+          </AssociationSet>
+          <AssociationSet Name="FK__director__fk_fil__145C0A3F" Association="Self.FK__director__fk_fil__145C0A3F">
+            <End Role="film" EntitySet="films" />
+            <End Role="director" EntitySet="directors" />
+          </AssociationSet>
+          <AssociationSet Name="FK__director__fk_tel__15502E78" Association="Self.FK__director__fk_tel__15502E78">
+            <End Role="television" EntitySet="televisions" />
+            <End Role="director" EntitySet="directors" />
+          </AssociationSet>
+          <AssociationSet Name="FK__film__fk_genre_i__0519C6AF" Association="Self.FK__film__fk_genre_i__0519C6AF">
+            <End Role="genre" EntitySet="genres" />
+            <End Role="film" EntitySet="films" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_fil__1B0907CE" Association="Self.FK__username__fk_fil__1B0907CE">
+            <End Role="film" EntitySet="films" />
+            <End Role="username" EntitySet="usernames" />
+          </AssociationSet>
+          <AssociationSet Name="FK__televisio__fk_ge__09DE7BCC" Association="Self.FK__televisio__fk_ge__09DE7BCC">
+            <End Role="genre" EntitySet="genres" />
+            <End Role="television" EntitySet="televisions" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_gen__1A14E395" Association="Self.FK__username__fk_gen__1A14E395">
+            <End Role="genre" EntitySet="genres" />
+            <End Role="username" EntitySet="usernames" />
+          </AssociationSet>
+          <AssociationSet Name="FK__username__fk_tel__1BFD2C07" Association="Self.FK__username__fk_tel__1BFD2C07">
+            <End Role="television" EntitySet="televisions" />
+            <End Role="username" EntitySet="usernames" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="videosOnDemandModelStoreContainer" CdmEntityContainer="videosOnDemandEntities">
+          <EntitySetMapping Name="actors">
+            <EntityTypeMapping TypeName="videosOnDemandModel.actor">
+              <MappingFragment StoreEntitySet="actor">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="fk_film_id" ColumnName="fk_film_id" />
+                <ScalarProperty Name="fk_television_id" ColumnName="fk_television_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="directors">
+            <EntityTypeMapping TypeName="videosOnDemandModel.director">
+              <MappingFragment StoreEntitySet="director">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="fk_film_id" ColumnName="fk_film_id" />
+                <ScalarProperty Name="fk_television_id" ColumnName="fk_television_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="films">
+            <EntityTypeMapping TypeName="videosOnDemandModel.film">
+              <MappingFragment StoreEntitySet="film">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="length_minute" ColumnName="length_minute" />
+                <ScalarProperty Name="release_date" ColumnName="release_date" />
+                <ScalarProperty Name="fk_genre_id" ColumnName="fk_genre_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="genres">
+            <EntityTypeMapping TypeName="videosOnDemandModel.genre">
+              <MappingFragment StoreEntitySet="genre">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="televisions">
+            <EntityTypeMapping TypeName="videosOnDemandModel.television">
+              <MappingFragment StoreEntitySet="television">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="number_of_seasons" ColumnName="number_of_seasons" />
+                <ScalarProperty Name="number_of_episodes" ColumnName="number_of_episodes" />
+                <ScalarProperty Name="length_minute" ColumnName="length_minute" />
+                <ScalarProperty Name="release_date" ColumnName="release_date" />
+                <ScalarProperty Name="fk_genre_id" ColumnName="fk_genre_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usernames">
+            <EntityTypeMapping TypeName="videosOnDemandModel.username">
+              <MappingFragment StoreEntitySet="username">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="hours_watched" ColumnName="hours_watched" />
+                <ScalarProperty Name="subscription" ColumnName="subscription" />
+                <ScalarProperty Name="fk_genre_id" ColumnName="fk_genre_id" />
+                <ScalarProperty Name="fk_film_id" ColumnName="fk_film_id" />
+                <ScalarProperty Name="fk_television_id" ColumnName="fk_television_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
