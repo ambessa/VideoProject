@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="VideoOnDemandWPF.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        <Button Content="Sign Up" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Log In" Grid.Column="1" HorizontalAlignment="Left" Margin="100,206,0,0" VerticalAlignment="Top" Width="75"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="83,138,0,0" VerticalAlignment="Top" Height="22" Width="110"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="81,138,0,0" VerticalAlignment="Top" Height="22" Width="110" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="83,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="81,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="83,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="53" Width="366" RenderTransformOrigin="0.5,0.5" FontSize="36"><Run Text="   "/><Run Text="Video On Demand"/></TextBlock>
+
+    </Grid>
+</Window>

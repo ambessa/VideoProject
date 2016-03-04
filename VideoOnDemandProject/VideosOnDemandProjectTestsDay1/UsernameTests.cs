@@ -5,7 +5,7 @@ using VideoOnDemandProjectDay1;
 namespace VideosOnDemandProjectTestsDay1
 {
     [TestClass]
-    public class UnitTest1
+    public class UsernameTests
     {
         [TestMethod]
         public void Test_CheckCustomer_HasNoUsernameWithVideoOnDemand_WhenCalled()
@@ -23,14 +23,14 @@ namespace VideosOnDemandProjectTestsDay1
         }
 
         [TestMethod]
-        public void Test_CheckCustomer_HasAUsernameWithVideoOnDemandWithoutFullSubscription_WhenCalled()
+        public void Test_CheckCustomer_HasAUsernameWithoutFullSubscriptionService_WhenCalled()
         {
             //Arrange
             Username username = new Username();
             string user = "abel";
-            bool access = false;
+            bool fullService = false;
             //Act
-            bool userAccess = username.CheckUser(user, access);
+            bool userAccess = username.CheckUser(user, fullService);
 
             //Assert
             Assert.AreEqual(true, userAccess);
@@ -38,15 +38,15 @@ namespace VideosOnDemandProjectTestsDay1
         }
 
         [TestMethod]
-        public void Test_CustomerWithUsername_HasSubscribedToFullSubscriptionService_WhenCalled()
+        public void Test_CheckCustomerWithUsername_HasSubscribedToFullSubscriptionService_WhenCalled()
         {
             //Arrange
             Username username = new Username();
             string user = "abel";
-            bool access = true;
+            bool fullService = true;
 
             //Act
-            bool userAccess = username.CheckUser(user, access);
+            bool userAccess = username.CheckUser(user, fullService);
 
             //Arrange
             Assert.AreEqual(true, userAccess);

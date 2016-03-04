@@ -36,7 +36,18 @@ namespace VideoOnDemandProjectDay1
                    Console.WriteLine(actor.first_name);
                }
             }
-      
+            
+            var film = new film(){ name = "Pokemon", length_minute = 100, release_date = Convert.ToDateTime("1999-01-01")};
+
+
+            int result = 0;
+            using(var context = new videosOnDemandEntities())
+            {
+                context.films.Add(film);
+                result = context.SaveChanges();
+            }
+            Console.ReadLine();
+
 
         }
 

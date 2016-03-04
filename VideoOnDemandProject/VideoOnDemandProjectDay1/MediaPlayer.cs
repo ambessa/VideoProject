@@ -8,14 +8,20 @@ namespace VideoOnDemandProjectDay1
 {
     public class MediaPlayer
     {
-        //MediaLibrary mediaLibrary = new MediaLibrary();
-        //List<Video> playlist;
+        MediaLibrary _mediaLibrary;
+        List<Video> playList = new List<Video>();
 
+        public MediaPlayer(MediaLibrary mediaLibrary)
+        {
+            _mediaLibrary = mediaLibrary;
+        }
 
 
         public List<Video> PlayVideo()
         {
-            return new List<Video>();
+            
+            return _mediaLibrary.VideoSearch();
         }
+
     }
 }
