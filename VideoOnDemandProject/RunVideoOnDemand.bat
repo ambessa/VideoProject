@@ -5,7 +5,7 @@ REM Run unit tests through OpenCover
 .\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe^
  -register:user^
  -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe"^
- -targetargs:"/noisolation /testcontainer:\"VideoOnDemandProject\bin\Debug\VideosOnDemandProjectTestsDay1.dll\""^
+ -targetargs:"/noisolation /testcontainer:\"VideosOnDemandProjectTestsDay1\bin\Debug\VideosOnDemandProjectTestsDay1.dll\""^
  -mergebyhash^
  -output:.\reports\output.xml
 

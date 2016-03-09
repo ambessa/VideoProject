@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using VideosOnDemandEntityDatabase;
 
-[assembly: log4net.Config.XmlConfigurator(Watch=true)]
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 
 namespace VideoOnDemandProjectDay1
 {
@@ -29,24 +29,24 @@ namespace VideoOnDemandProjectDay1
             //    Console.WriteLine("Error");
             //}
 
-            using(var context = new videosOnDemandEntities())
+            using (var context = new videosOnDemandEntities())
             {
-               foreach(var actor in context.actors)
-               {
-                   Console.WriteLine(actor.first_name);
-               }
+                foreach (var actor in context.actors)
+                {
+                    Console.WriteLine(actor.first_name);
+                }
             }
-            
-            var film = new film(){ name = "Pokemon", length_minute = 100, release_date = Convert.ToDateTime("1999-01-01")};
+
+            //var film = new film(){ name = "Pokemon", length_minute = 100, release_date = Convert.ToDateTime("1999-01-01")};
 
 
-            int result = 0;
-            using(var context = new videosOnDemandEntities())
-            {
-                context.films.Add(film);
-                result = context.SaveChanges();
-            }
-            Console.ReadLine();
+            //int result = 0;
+            //using(var context = new videosOnDemandEntities())
+            //{
+            //    context.films.Add(film);
+            //    result = context.SaveChanges();
+            //}
+            //Console.ReadLine();
 
 
         }

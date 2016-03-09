@@ -1,4 +1,4 @@
-inWelcome to OpenCover.
+Welcome to OpenCover.
 
 OpenCover is an open source (MIT licence) code coverage utility for all .NET 
 Frameworks (2 and above, including Silverlight). It can handle all .NET 

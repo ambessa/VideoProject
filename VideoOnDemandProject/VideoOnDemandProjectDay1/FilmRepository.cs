@@ -8,21 +8,15 @@ using VideosOnDemandEntityDatabase;
 
 namespace VideoOnDemandProjectDay1
 {
-    public class FilmController
+    public class FilmRepository
     {
         private videosOnDemandEntities _context;
 
-        public FilmController(videosOnDemandEntities context)
+        public FilmRepository(videosOnDemandEntities context)
         {
             _context = context;
         }
 
-        public film AddFilm(string name, int length, DateTime date, int id)
-        {
-            var Film = _context.films.Add(new film { name = name, length_minute = length, release_date = date, fk_genre_id = id });
-            _context.SaveChanges();
-            return Film;
-        }
 
         public List<film> GetAllFilms()
         {
@@ -32,6 +26,6 @@ namespace VideoOnDemandProjectDay1
             return query.ToList();
         }
 
-         
+
     }
 }

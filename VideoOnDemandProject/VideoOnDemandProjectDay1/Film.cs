@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace VideoOnDemandProjectDay1
 {
-    public abstract class Video
+    public class Film : Video
     {
- 
     }
 }
