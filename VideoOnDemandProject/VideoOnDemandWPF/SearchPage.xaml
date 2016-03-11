@@ -13,15 +13,28 @@
 
 
     <Grid>
-        <TextBlock Text="Media Library" FontSize="25" HorizontalAlignment="Center"/>
-        <TextBox HorizontalAlignment="Center" Margin="74,44,78,0" TextWrapping="Wrap" Text="{Binding input}" VerticalAlignment="Top" Height="22" Width="148"/>
-        <Button Content="Search" HorizontalAlignment="Center" Margin="114,84,111,0" VerticalAlignment="Top" Width="75"/>
-        <ListBox ItemsSource="{Binding input}">
+        <TextBlock Text="Search Film" FontSize="25" HorizontalAlignment="Center" Margin="87,0,87,261"/>
+        <TextBox Text="{Binding searchFilm, Mode=TwoWay}" HorizontalAlignment="Center" Margin="26,44,126,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="148"/>
+        <Button Command="{Binding searchFilmButtonCommand}" Content="Search" HorizontalAlignment="Center" Margin="199,44,26,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox ItemsSource="{Binding films}" Margin="87,87,102,184">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <DataGrid>
-                        
-                    </DataGrid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBlock Text="Search TV Show" FontSize="25" HorizontalAlignment="Center" Margin="59,138,65,120" />
+        <TextBox Text="{Binding searchTv, Mode=TwoWay}" HorizontalAlignment="Center" Margin="26,185,126,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="148"/>
+        <Button Command="{Binding searchTVButtonCommand}" Content="Search" HorizontalAlignment="Center" Margin="199,185,26,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox ItemsSource="{Binding tvShow}" Margin="87,242,102,28">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding name}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

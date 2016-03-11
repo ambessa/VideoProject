@@ -15,9 +15,18 @@ namespace VideoOnDemandProjectDay1
         public FilmRepository(videosOnDemandEntities context)
         {
             _context = context;
+            
         }
 
+        public film AddFilm(string title, int length, DateTime releaseDate)
+        {
+            var Film = _context.films.Add(new film() { name = title, length_minute = length, release_date = releaseDate });
 
+            _context.SaveChanges();
+
+            return Film;
+        }
+        
         public List<film> GetAllFilms()
         {
             var query = (from f in _context.films
@@ -26,6 +35,17 @@ namespace VideoOnDemandProjectDay1
             return query.ToList();
         }
 
+        public void RemoveFilm(string title)
+        {
+            var Films = _context.films.Where(a=>a.name == title);
+
+            foreach(film Film in Films)
+            {
+                _context.films.Remove(Film);
+            }
+
+            _context.SaveChanges();
+        }
 
     }
 }

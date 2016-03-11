@@ -16,6 +16,15 @@ namespace VideoOnDemandProjectDay1
             _context = context;
         }
 
+        public television AddTVShow(string title, int numSeasons, int numeEpisodes, int length, DateTime releaseDate)
+        {
+            var TVShow = _context.televisions.Add(new television() { name = title, number_of_seasons= numSeasons, number_of_episodes = numeEpisodes ,length_minute = length, release_date = releaseDate });
+
+            _context.SaveChanges();
+
+            return TVShow;
+        }
+
         public List<television> GetAllTelevisionShows()
         {
             var query = (from t in _context.televisions
@@ -24,6 +33,17 @@ namespace VideoOnDemandProjectDay1
             return query.ToList();
         }
 
+        public void RemoveTVShow(string title)
+        {
+            var TVShows = _context.televisions.Where(a => a.name == title);
+
+            foreach (television TVShow in TVShows)
+            {
+                _context.televisions.Remove(TVShow);
+            }
+
+            _context.SaveChanges();
+        }
 
         //public void SearchTelevisionsShowWithGenreHorror()
         //{

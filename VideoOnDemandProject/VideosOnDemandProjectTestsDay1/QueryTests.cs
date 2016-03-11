@@ -198,5 +198,59 @@ namespace VideosOnDemandProjectTestsDay1
             //assert
             mockContext.Verify(a => a.SaveChanges());
         }
+
+        [TestMethod]
+        public void Test_DeletesAFilmFromMediaLibraray_SavesToDatabase()
+        {
+            //arrange
+            var data = new List<film>
+            {
+                new film {name="Usual Suspects",length_minute=210,release_date=Convert.ToDateTime("01-01-2000")}
+            }.AsQueryable();
+
+
+            var mockSet = new Mock<DbSet<film>>();
+            mockSet.As<IQueryable<film>>().Setup(m => m.Provider).Returns(data.Provider);
+            mockSet.As<IQueryable<film>>().Setup(m => m.Expression).Returns(data.Expression);
+            mockSet.As<IQueryable<film>>().Setup(m => m.ElementType).Returns(data.ElementType);
+            mockSet.As<IQueryable<film>>().Setup(m => m.GetEnumerator()).Returns(() => data.GetEnumerator());
+
+            //act
+            var mockContext = new Mock<videosOnDemandEntities>();
+            mockContext.Setup(a => a.films).Returns(mockSet.Object);
+
+            var repo = new FilmRepository(mockContext.Object);
+            repo.RemoveFilm("Usual Suspects");
+
+            //assert
+            mockContext.Verify(a => a.SaveChanges());
+        }
+
+        [TestMethod]
+        public void Test_DeletesATVShowFromMediaLibraray_SavesToDatabase()
+        {
+            //arrange
+            var data = new List<television>
+            {
+                new television {name="Luther", number_of_seasons = 4, number_of_episodes = 45, length_minute = 60, release_date = Convert.ToDateTime("01-01-2010")}
+            }.AsQueryable();
+
+
+            var mockSet = new Mock<DbSet<television>>();
+            mockSet.As<IQueryable<television>>().Setup(m => m.Provider).Returns(data.Provider);
+            mockSet.As<IQueryable<television>>().Setup(m => m.Expression).Returns(data.Expression);
+            mockSet.As<IQueryable<television>>().Setup(m => m.ElementType).Returns(data.ElementType);
+            mockSet.As<IQueryable<television>>().Setup(m => m.GetEnumerator()).Returns(() => data.GetEnumerator());
+
+            //act
+            var mockContext = new Mock<videosOnDemandEntities>();
+            mockContext.Setup(a => a.televisions).Returns(mockSet.Object);
+
+            var repo = new TelevisionRepository(mockContext.Object);
+            repo.RemoveTVShow("Luther");
+
+            //assert
+            mockContext.Verify(a => a.SaveChanges());
+        }
     }
 }
