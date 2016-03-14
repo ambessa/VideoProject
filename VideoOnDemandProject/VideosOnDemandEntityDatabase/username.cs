@@ -21,6 +21,7 @@ namespace VideosOnDemandEntityDatabase
         public Nullable<int> fk_genre_id { get; set; }
         public Nullable<int> fk_film_id { get; set; }
         public Nullable<int> fk_television_id { get; set; }
+        public string pass_word { get; set; }
     
         public virtual film film { get; set; }
         public virtual genre genre { get; set; }

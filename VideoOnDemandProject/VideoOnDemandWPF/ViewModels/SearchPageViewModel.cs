@@ -108,17 +108,7 @@ namespace VideoOnDemandWPF.ViewModels
         {
             List<film> foundFilms = filmRepo.GetAllFilms().FindAll(f => f.name == searchFilm);
             films = new ObservableCollection<film>(foundFilms);
-            //string error = ""
-            //for (int i = 0; i < films.Count; i++)
-            //    {
-            //        if(searchFilm != films[i].name)
-            //        {
-            //            return ;
-            //        }
-            //    }
-            
-            //foreach(!(film searchFilm in films))
-            //{
+
 
         }
 

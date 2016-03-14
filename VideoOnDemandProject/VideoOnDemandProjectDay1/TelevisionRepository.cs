@@ -16,13 +16,12 @@ namespace VideoOnDemandProjectDay1
             _context = context;
         }
 
-        public television AddTVShow(string title, int numSeasons, int numeEpisodes, int length, DateTime releaseDate)
+        public void AddTVShow(string title, int numSeasons, int numeEpisodes, int length, DateTime releaseDate)
         {
             var TVShow = _context.televisions.Add(new television() { name = title, number_of_seasons= numSeasons, number_of_episodes = numeEpisodes ,length_minute = length, release_date = releaseDate });
 
             _context.SaveChanges();
 
-            return TVShow;
         }
 
         public List<television> GetAllTelevisionShows()

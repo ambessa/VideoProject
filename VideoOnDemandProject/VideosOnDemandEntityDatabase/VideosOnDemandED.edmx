@@ -67,6 +67,7 @@
           <Property Name="fk_genre_id" Type="int" />
           <Property Name="fk_film_id" Type="int" />
           <Property Name="fk_television_id" Type="int" />
+          <Property Name="pass_word" Type="varchar" MaxLength="255" />
         </EntityType>
         <Association Name="FK__actor__fk_film_i__0EA330E9">
           <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
@@ -304,6 +305,7 @@
           <NavigationProperty Name="film" Relationship="Self.FK__username__fk_fil__1B0907CE" FromRole="username" ToRole="film" />
           <NavigationProperty Name="genre" Relationship="Self.FK__username__fk_gen__1A14E395" FromRole="username" ToRole="genre" />
           <NavigationProperty Name="television" Relationship="Self.FK__username__fk_tel__1BFD2C07" FromRole="username" ToRole="television" />
+          <Property Name="pass_word" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK__actor__fk_film_i__0EA330E9">
           <End Role="genre" Type="Self.genre" Multiplicity="0..1" />
@@ -522,6 +524,7 @@
           <EntitySetMapping Name="usernames">
             <EntityTypeMapping TypeName="videosOnDemandModel.username">
               <MappingFragment StoreEntitySet="username">
+                <ScalarProperty Name="pass_word" ColumnName="pass_word" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="hours_watched" ColumnName="hours_watched" />

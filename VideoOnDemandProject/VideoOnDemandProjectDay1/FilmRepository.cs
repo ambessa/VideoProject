@@ -18,13 +18,12 @@ namespace VideoOnDemandProjectDay1
             
         }
 
-        public film AddFilm(string title, int length, DateTime releaseDate)
+        public void AddFilm(string title, int length, DateTime releaseDate)
         {
             var Film = _context.films.Add(new film() { name = title, length_minute = length, release_date = releaseDate });
 
             _context.SaveChanges();
 
-            return Film;
         }
         
         public List<film> GetAllFilms()

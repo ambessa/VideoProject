@@ -3,10 +3,13 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:VideoOnDemandWPF.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="FilmManager">
-
+    <Page.DataContext>
+        <vm:MediaLibraryViewModel/>
+    </Page.DataContext>
     <Grid>
         
         <TextBlock Text="Mins:" Margin="0,59,260,223"/>
@@ -21,7 +24,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="86,28,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding title}" HorizontalAlignment="Left" Height="23" Margin="86,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock Text="Media Library" Margin="101,5,120,273" RenderTransformOrigin="0.5,0.5">
             <TextBlock.RenderTransform>
                 <TransformGroup>
@@ -32,16 +35,16 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="86,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding minute}" HorizontalAlignment="Left" Height="23" Margin="86,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock Text="Release Date:" Margin="0,161,229,121"/>
         <TextBlock Text="No. of Seasons:" Margin="0,94,214,188"/>
         <TextBlock Text="No. of Episodes:" Margin="0,124,213,158"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="86,91,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="87,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="87,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="+ Film" HorizontalAlignment="Left" Margin="46,223,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="+ TVShow" HorizontalAlignment="Left" Margin="177,223,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="- Film" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="- TVShow" HorizontalAlignment="Left" Margin="177,258,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox Text="{Binding noSeasons}" HorizontalAlignment="Left" Height="23" Margin="86,91,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding noEpisodes}" HorizontalAlignment="Left" Height="23" Margin="87,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Text="{Binding release}" HorizontalAlignment="Left" Height="23" Margin="87,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Command="{Binding addFilmCommand}" Content="+ Film" HorizontalAlignment="Left" Margin="46,223,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding addTVCommand}" Content="+ TVShow" HorizontalAlignment="Left" Margin="177,223,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding removeFilmCommand}" Content="- Film" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding removeTVCommand}" Content="- TVShow" HorizontalAlignment="Left" Margin="177,258,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Page>

@@ -16,12 +16,12 @@
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <Button Command="{Binding navigateToSearchPageCommand}" Content="Sign Up" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Command="{Binding checkUserNavigateToSearchCommand}" Content="Sign Up" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Log In" Grid.Column="1" HorizontalAlignment="Left" Margin="100,206,0,0" VerticalAlignment="Top" Width="75"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="83,138,0,0" VerticalAlignment="Top" Height="22" Width="110"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="81,138,0,0" VerticalAlignment="Top" Height="22" Width="110" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="83,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="81,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Grid.Column="1"/>
+        <TextBox Text="{Binding passwordSign}" HorizontalAlignment="Left" Margin="83,138,0,0" VerticalAlignment="Top" Height="22" Width="110"/>
+        <TextBox Text="{Binding passwordLog}" HorizontalAlignment="Left" Margin="81,138,0,0" VerticalAlignment="Top" Height="22" Width="110" Grid.Column="1"/>
+        <TextBox Text="{Binding usernameSign}" HorizontalAlignment="Left" Height="22" Margin="83,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <TextBox Text="{Binding usernameLog}"  HorizontalAlignment="Left" Height="22" Margin="81,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="83,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="53" Width="366" RenderTransformOrigin="0.5,0.5" FontSize="36"><Run Text="   "/><Run Text="Video On Demand"/></TextBlock>
         
     </Grid>

@@ -16,34 +16,41 @@ namespace VideoOnDemandProjectDay1
             _context = context;
         }
 
-        public username AddUser(string username, string subscription)
+        public void AddUser(string username, string password)
         {
-            var Username = _context.usernames.Add(new username() { name = "abel.ghebrezadik", subscription = subscription });
+            var Username = _context.usernames.Add(new username() { name = username, pass_word = password });
             _context.SaveChanges();
 
-            return Username;
         }
 
-        public List<username> GetAListOfOneUsernamesSubscribed()
+        public List<username> GetUsernames()
         {
-            var query = from u in _context.usernames
-                        where u.subscription == "paid"
-                        select u;
+            var query = (from u in _context.usernames
+
+                         select u);
             return query.ToList();
         }
 
-        public List<username> GetAListOfOneUsernamesNotSubscribed()
-        {
-            var query = from u in _context.usernames
-                        where u.subscription == "unpaid"
-                        select u;
-            return query.ToList();
-        }
+        //public List<username> GetAListOfOneUsernamesSubscribed()
+        //{
+        //    var query = from u in _context.usernames
+        //                where u.subscription == "paid"
+        //                select u;
+        //    return query.ToList();
+        //}
 
-        public void DeleteUser(string subscription)
+        //public List<username> GetAListOfOneUsernamesNotSubscribed()
+        //{
+        //    var query = from u in _context.usernames
+        //                where u.subscription == "unpaid"
+        //                select u;
+        //    return query.ToList();
+        //}
+
+        public void DeleteUser(string username)
         {
 
-            var Username = _context.usernames.Where(u => u.subscription == "expired");
+            var Username = _context.usernames.Where(u => u.name == username);
             _context.SaveChanges();
 
         }
