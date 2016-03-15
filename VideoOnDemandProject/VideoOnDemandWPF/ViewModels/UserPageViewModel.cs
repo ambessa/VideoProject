@@ -82,7 +82,7 @@ namespace VideoOnDemandWPF.ViewModels
         private void loginThenNavigateToSearch()
         {
             var list = userRepo.GetUsernames().FindAll(a => a.name == usernameLog);
-            if()
+            //if()
         }
         
 

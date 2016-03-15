@@ -147,6 +147,10 @@
       <Project>{67bb1665-3fa5-439c-8d9a-a7138b98782d}</Project>
       <Name>VideosOnDemandEntityDatabase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WcfVideoService\WcfVideoService.csproj">
+      <Project>{2e50284b-7080-4ea4-8b0c-b3abbbe1ba9e}</Project>
+      <Name>WcfVideoService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

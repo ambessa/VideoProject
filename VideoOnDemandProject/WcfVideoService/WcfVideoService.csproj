@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CCFDED40-3D67-4FEA-93F8-DB65E43C14B0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{2E50284B-7080-4EA4-8B0C-B3ABBBE1BA9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WcfVideoService</RootNamespace>
-    <AssemblyName>VideoOnDemandProjectDay1</AssemblyName>
+    <AssemblyName>WcfVideoService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,11 +37,10 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,24 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Film.cs" />
-    <Compile Include="FilmRepository.cs" />
-    <Compile Include="MediaDatabaseReader.cs" />
-    <Compile Include="MediaLibrary.cs" />
-    <Compile Include="MediaPlayer.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IVideoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Television.cs" />
-    <Compile Include="Username.cs" />
-    <Compile Include="UsernameRepository.cs" />
-    <Compile Include="Video.cs" />
-    <Compile Include="TelevisionRepository.cs" />
+    <Compile Include="VideoService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\VideoOnDemandProjectDay1\VideoOnDemandProjectDay1.csproj">
+      <Project>{ccfded40-3d67-4fea-93f8-db65e43c14b0}</Project>
+      <Name>VideoOnDemandProjectDay1</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VideosOnDemandEntityDatabase\VideosOnDemandEntityDatabase.csproj">
       <Project>{67bb1665-3fa5-439c-8d9a-a7138b98782d}</Project>
       <Name>VideosOnDemandEntityDatabase</Name>
