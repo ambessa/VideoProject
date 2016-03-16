@@ -18,6 +18,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoOnDemandWPF", "VideoOn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfVideoService", "WcfVideoService\WcfVideoService.csproj", "{2E50284B-7080-4EA4-8B0C-B3ABBBE1BA9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfVideoHost", "WcfVideoHost\WcfVideoHost.csproj", "{1AF47652-51C7-4A64-B926-FCE25137AC35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetVidOnDemand", "AspNetVidOnDemand\AspNetVidOnDemand.csproj", "{91D54AD0-CCA8-4998-8EBB-84DDFCBE076A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetVidOnDemand.Tests", "AspNetVidOnDemand.Tests\AspNetVidOnDemand.Tests.csproj", "{4CC077B9-9CE9-4578-A241-1EE4932D0814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClient", "WcfClient\WcfClient.csproj", "{9EDE3C75-B047-46CA-BC38-AAB828FC94AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +52,22 @@ Global
 		{2E50284B-7080-4EA4-8B0C-B3ABBBE1BA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E50284B-7080-4EA4-8B0C-B3ABBBE1BA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E50284B-7080-4EA4-8B0C-B3ABBBE1BA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF47652-51C7-4A64-B926-FCE25137AC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF47652-51C7-4A64-B926-FCE25137AC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF47652-51C7-4A64-B926-FCE25137AC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF47652-51C7-4A64-B926-FCE25137AC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D54AD0-CCA8-4998-8EBB-84DDFCBE076A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D54AD0-CCA8-4998-8EBB-84DDFCBE076A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D54AD0-CCA8-4998-8EBB-84DDFCBE076A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D54AD0-CCA8-4998-8EBB-84DDFCBE076A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC077B9-9CE9-4578-A241-1EE4932D0814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC077B9-9CE9-4578-A241-1EE4932D0814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC077B9-9CE9-4578-A241-1EE4932D0814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC077B9-9CE9-4578-A241-1EE4932D0814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDE3C75-B047-46CA-BC38-AAB828FC94AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDE3C75-B047-46CA-BC38-AAB828FC94AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDE3C75-B047-46CA-BC38-AAB828FC94AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDE3C75-B047-46CA-BC38-AAB828FC94AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

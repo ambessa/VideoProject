@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using VideosOnDemandEntityDatabase;
 using WcfVideoService;
 
 namespace WcfClient
@@ -12,19 +14,21 @@ namespace WcfClient
     {
         static void Main(string[] args)
         {
-            //EndpointAddress endpoint = new EndpointAddress("http://TRNLON11603:8081/ChatService");
 
-            //IVideoService proxy = ChannelFactory<IVideoService>.CreateChannel(new BasicHttpBinding(), endpoint);
+            EndpointAddress endpoint = new EndpointAddress("http://TRNLON11603:8081/VideoService");
+            
+            IVideoService proxy = ChannelFactory<IVideoService>.CreateChannel(new BasicHttpBinding(), endpoint);
 
-            //List<film> books = proxy;
-            ////proxy.SendMessage();
+            List<film> films = proxy.GetFilms();
+            
 
-            //foreach (Book book in books)
-            //{
-            //    Console.WriteLine(book.name);
-            //}
+            foreach (var film in films)
+            {
+                Console.WriteLine(film.name);
+            }
 
-            //Console.Read();
+            Console.Read();
+            
         }
     }
 }

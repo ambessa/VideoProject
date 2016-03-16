@@ -92,13 +92,13 @@
       <ModuleName>Microsoft.VisualStudio.QualityTools.Tips.UnitTest.AssemblyResolver</ModuleName>
       <Classes />
     </Module>
-    <Module hash="45-2F-06-9B-20-57-97-56-E7-C3-C4-6B-8F-1F-6F-E3-9D-B2-40-F6">
+    <Module hash="C5-47-3D-7A-AE-E2-F1-46-C7-0E-18-E9-80-C8-AE-46-54-A7-35-AD">
       <Summary numSequencePoints="210" visitedSequencePoints="202" numBranchPoints="29" visitedBranchPoints="21" sequenceCoverage="96.19" branchCoverage="72.41" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="5" numClasses="13" visitedMethods="21" numMethods="29" />
       <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\bin\Debug\VideosOnDemandProjectTestsDay1.dll</FullName>
       <ModuleName>VideosOnDemandProjectTestsDay1</ModuleName>
       <Files>
-        <File uid="1" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\NonQueryTests.cs" />
-        <File uid="2" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\QueryTests.cs" />
+        <File uid="1" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\QueryTests.cs" />
+        <File uid="10" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\NonQueryTests.cs" />
         <File uid="11" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\UsernameTests.cs" />
         <File uid="12" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\MediaLibraryTests.cs" />
         <File uid="13" fullPath="c:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\VideosOnDemandProjectTestsDay1\MediaPlayerTests.cs" />
@@ -110,290 +110,200 @@
           <Methods />
         </Class>
         <Class>
-          <Summary numSequencePoints="36" visitedSequencePoints="36" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
-          <FullName>VideosOnDemandProjectTestsDay1.NonQueryTests</FullName>
-          <Methods>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663297</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_CreatesAUsernameWithSubscription_SavesToDatabase()</Name>
-              <FileRef uid="1" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="1" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="2" ordinal="1" offset="1" sl="17" sc="13" el="17" ec="55" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="3" ordinal="2" offset="7" sl="18" sc="13" el="18" ec="66" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="4" ordinal="3" offset="13" sl="19" sc="13" el="19" ec="73" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="5" ordinal="4" offset="93" sl="22" sc="13" el="22" ec="67" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="6" ordinal="5" offset="105" sl="23" sc="13" el="23" ec="54" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="7" ordinal="6" offset="122" sl="26" sc="13" el="26" ec="73" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="8" ordinal="7" offset="249" sl="27" sc="13" el="27" ec="54" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="9" ordinal="8" offset="324" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="1" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="1" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663298</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_CreatesAUsernameWithoutSubscription_SavesToDatabase()</Name>
-              <FileRef uid="1" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="10" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="11" ordinal="1" offset="1" sl="34" sc="13" el="34" ec="55" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="12" ordinal="2" offset="7" sl="35" sc="13" el="35" ec="66" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="13" ordinal="3" offset="13" sl="36" sc="13" el="36" ec="73" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="14" ordinal="4" offset="93" sl="39" sc="13" el="39" ec="67" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="15" ordinal="5" offset="105" sl="40" sc="13" el="40" ec="56" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="16" ordinal="6" offset="122" sl="43" sc="13" el="43" ec="74" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="17" ordinal="7" offset="249" sl="44" sc="13" el="44" ec="54" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="18" ordinal="8" offset="324" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="1" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="10" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="1" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663299</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_AddFilmToTheDatabase_SavesToDatabase()</Name>
-              <FileRef uid="1" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="19" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="20" ordinal="1" offset="1" sl="51" sc="13" el="51" ec="51" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="21" ordinal="2" offset="7" sl="52" sc="13" el="52" ec="66" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="22" ordinal="3" offset="13" sl="53" sc="13" el="53" ec="69" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="23" ordinal="4" offset="93" sl="57" sc="13" el="57" ec="63" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="24" ordinal="5" offset="105" sl="58" sc="13" el="58" ec="83" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="25" ordinal="6" offset="132" sl="61" sc="13" el="61" ec="69" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="26" ordinal="7" offset="259" sl="62" sc="13" el="62" ec="52" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="27" ordinal="8" offset="334" sl="64" sc="9" el="64" ec="10" bec="0" bev="0" fileid="1" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="19" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="1" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663300</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_AddTVShowToTheDatabase_SavesToDatabase()</Name>
-              <FileRef uid="1" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="28" ordinal="0" offset="0" sl="68" sc="9" el="68" ec="10" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="29" ordinal="1" offset="1" sl="70" sc="13" el="70" ec="57" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="30" ordinal="2" offset="7" sl="71" sc="13" el="71" ec="66" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="31" ordinal="3" offset="13" sl="72" sc="13" el="72" ec="75" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="32" ordinal="4" offset="93" sl="76" sc="13" el="76" ec="69" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="33" ordinal="5" offset="105" sl="77" sc="13" el="77" ec="83" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="34" ordinal="6" offset="132" sl="80" sc="13" el="80" ec="75" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="35" ordinal="7" offset="259" sl="81" sc="13" el="81" ec="52" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="36" ordinal="8" offset="334" sl="83" sc="9" el="83" ec="10" bec="0" bev="0" fileid="1" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="28" ordinal="0" offset="0" sl="68" sc="9" el="68" ec="10" bec="0" bev="0" fileid="1" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
-              <MetadataToken>100663301</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::.ctor()</Name>
-              <SequencePoints />
-              <BranchPoints />
-              <MethodPoint vc="4" uspid="37" ordinal="0" offset="0" />
-            </Method>
-          </Methods>
-        </Class>
-        <Class>
           <Summary numSequencePoints="104" visitedSequencePoints="104" numBranchPoints="8" visitedBranchPoints="8" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="8" numMethods="8" />
           <FullName>VideosOnDemandProjectTestsDay1.QueryTests</FullName>
           <Methods>
             <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663302</MetadataToken>
+              <MetadataToken>100663297</MetadataToken>
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllFilms_FromTheDatabase_ReturnAnEmptyList()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="38" ordinal="0" offset="7" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="39" ordinal="1" offset="8" sl="19" sc="13" el="19" ec="55" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="40" ordinal="2" offset="25" sl="21" sc="13" el="21" ec="51" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="41" ordinal="3" offset="31" sl="22" sc="13" el="22" ec="90" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="42" ordinal="4" offset="125" sl="23" sc="13" el="23" ec="94" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="43" ordinal="5" offset="219" sl="24" sc="13" el="24" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="44" ordinal="6" offset="313" sl="25" sc="13" el="25" ec="110" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="45" ordinal="7" offset="419" sl="27" sc="13" el="27" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="46" ordinal="8" offset="425" sl="28" sc="13" el="28" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="47" ordinal="9" offset="508" sl="31" sc="13" el="31" ec="63" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="48" ordinal="10" offset="520" sl="32" sc="13" el="32" ec="50" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="49" ordinal="11" offset="527" sl="35" sc="13" el="35" ec="51" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="50" ordinal="12" offset="540" sl="36" sc="9" el="36" ec="10" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="1" ordinal="0" offset="7" sl="17" sc="9" el="17" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="2" ordinal="1" offset="8" sl="19" sc="13" el="19" ec="55" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="3" ordinal="2" offset="25" sl="21" sc="13" el="21" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="4" ordinal="3" offset="31" sl="22" sc="13" el="22" ec="90" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="5" ordinal="4" offset="125" sl="23" sc="13" el="23" ec="94" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="6" ordinal="5" offset="219" sl="24" sc="13" el="24" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="7" ordinal="6" offset="313" sl="25" sc="13" el="25" ec="110" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="8" ordinal="7" offset="419" sl="27" sc="13" el="27" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="9" ordinal="8" offset="425" sl="28" sc="13" el="28" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="10" ordinal="9" offset="508" sl="31" sc="13" el="31" ec="63" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="11" ordinal="10" offset="520" sl="32" sc="13" el="32" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="12" ordinal="11" offset="527" sl="35" sc="13" el="35" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="13" ordinal="12" offset="540" sl="36" sc="9" el="36" ec="10" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="51" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="14" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllFilms_FromTheDatabase_ReturnAListOfOneFilm()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="15" ordinal="0" offset="7" sl="40" sc="9" el="40" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="16" ordinal="1" offset="8" sl="42" sc="13" el="46" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="17" ordinal="2" offset="100" sl="48" sc="13" el="48" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="18" ordinal="3" offset="106" sl="49" sc="13" el="49" ec="90" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="19" ordinal="4" offset="200" sl="50" sc="13" el="50" ec="94" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="20" ordinal="5" offset="294" sl="51" sc="13" el="51" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="21" ordinal="6" offset="388" sl="52" sc="13" el="52" ec="110" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="22" ordinal="7" offset="494" sl="54" sc="13" el="54" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="23" ordinal="8" offset="500" sl="55" sc="13" el="55" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="24" ordinal="9" offset="583" sl="58" sc="13" el="58" ec="63" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="25" ordinal="10" offset="595" sl="59" sc="13" el="59" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="26" ordinal="11" offset="602" sl="62" sc="13" el="62" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="27" ordinal="12" offset="615" sl="63" sc="9" el="63" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="28" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllTelevisionShows_FromTheDatabase_ReturnAnEmptyList()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="29" ordinal="0" offset="7" sl="67" sc="9" el="67" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="30" ordinal="1" offset="8" sl="69" sc="13" el="69" ec="61" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="31" ordinal="2" offset="25" sl="71" sc="13" el="71" ec="57" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="32" ordinal="3" offset="31" sl="72" sc="13" el="72" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="33" ordinal="4" offset="125" sl="73" sc="13" el="73" ec="100" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="34" ordinal="5" offset="219" sl="74" sc="13" el="74" ec="102" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="35" ordinal="6" offset="313" sl="75" sc="13" el="75" ec="116" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="36" ordinal="7" offset="419" sl="77" sc="13" el="77" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="37" ordinal="8" offset="425" sl="78" sc="13" el="78" ec="75" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="38" ordinal="9" offset="508" sl="81" sc="13" el="81" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="39" ordinal="10" offset="520" sl="82" sc="13" el="82" ec="62" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="40" ordinal="11" offset="527" sl="85" sc="13" el="85" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="41" ordinal="12" offset="540" sl="86" sc="9" el="86" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="42" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllTelevisionShows_FromTheDatabase_ReturnAListOfTwoTelevisionShows()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="43" ordinal="0" offset="7" sl="90" sc="9" el="90" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="44" ordinal="1" offset="8" sl="92" sc="13" el="96" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="45" ordinal="2" offset="223" sl="98" sc="13" el="98" ec="57" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="46" ordinal="3" offset="229" sl="99" sc="13" el="99" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="47" ordinal="4" offset="323" sl="100" sc="13" el="100" ec="100" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="48" ordinal="5" offset="417" sl="101" sc="13" el="101" ec="102" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="49" ordinal="6" offset="511" sl="102" sc="13" el="102" ec="116" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="50" ordinal="7" offset="617" sl="104" sc="13" el="104" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="51" ordinal="8" offset="623" sl="105" sc="13" el="105" ec="75" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="52" ordinal="9" offset="706" sl="108" sc="13" el="108" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="53" ordinal="10" offset="718" sl="109" sc="13" el="109" ec="62" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="54" ordinal="11" offset="725" sl="112" sc="13" el="112" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="55" ordinal="12" offset="738" sl="113" sc="9" el="113" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="56" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesAUsernameWhenSubscriptionIsExpired_SavesToDatabase()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="57" ordinal="0" offset="7" sl="148" sc="9" el="148" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="58" ordinal="1" offset="8" sl="150" sc="13" el="153" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="59" ordinal="2" offset="56" sl="156" sc="13" el="156" ec="55" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="60" ordinal="3" offset="62" sl="157" sc="13" el="157" ec="94" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="61" ordinal="4" offset="156" sl="158" sc="13" el="158" ec="98" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="62" ordinal="5" offset="250" sl="159" sc="13" el="159" ec="100" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="63" ordinal="6" offset="344" sl="160" sc="13" el="160" ec="114" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="64" ordinal="7" offset="450" sl="163" sc="13" el="163" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="65" ordinal="8" offset="456" sl="164" sc="13" el="164" ec="73" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="66" ordinal="9" offset="539" sl="166" sc="13" el="166" ec="67" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="67" ordinal="10" offset="551" sl="167" sc="13" el="167" ec="40" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="68" ordinal="11" offset="563" sl="170" sc="13" el="170" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="69" ordinal="12" offset="641" sl="171" sc="9" el="171" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="70" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesTwoUsernamesWhenSubscriptionIsExpired_SavesToDatabase()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="71" ordinal="0" offset="7" sl="175" sc="9" el="175" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="72" ordinal="1" offset="8" sl="177" sc="13" el="182" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="73" ordinal="2" offset="85" sl="185" sc="13" el="185" ec="55" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="74" ordinal="3" offset="91" sl="186" sc="13" el="186" ec="94" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="75" ordinal="4" offset="185" sl="187" sc="13" el="187" ec="98" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="76" ordinal="5" offset="279" sl="188" sc="13" el="188" ec="100" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="77" ordinal="6" offset="373" sl="189" sc="13" el="189" ec="114" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="78" ordinal="7" offset="479" sl="192" sc="13" el="192" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="79" ordinal="8" offset="485" sl="193" sc="13" el="193" ec="73" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="80" ordinal="9" offset="568" sl="195" sc="13" el="195" ec="67" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="81" ordinal="10" offset="580" sl="196" sc="13" el="196" ec="40" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="82" ordinal="11" offset="592" sl="199" sc="13" el="199" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="83" ordinal="12" offset="670" sl="200" sc="9" el="200" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="84" ordinal="0" offset="0" />
             </Method>
             <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken>100663303</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllFilms_FromTheDatabase_ReturnAListOfOneFilm()</Name>
-              <FileRef uid="2" />
+              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesAFilmFromMediaLibraray_SavesToDatabase()</Name>
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="52" ordinal="0" offset="7" sl="40" sc="9" el="40" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="53" ordinal="1" offset="8" sl="42" sc="13" el="46" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="54" ordinal="2" offset="100" sl="48" sc="13" el="48" ec="51" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="55" ordinal="3" offset="106" sl="49" sc="13" el="49" ec="90" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="56" ordinal="4" offset="200" sl="50" sc="13" el="50" ec="94" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="57" ordinal="5" offset="294" sl="51" sc="13" el="51" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="58" ordinal="6" offset="388" sl="52" sc="13" el="52" ec="110" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="59" ordinal="7" offset="494" sl="54" sc="13" el="54" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="60" ordinal="8" offset="500" sl="55" sc="13" el="55" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="61" ordinal="9" offset="583" sl="58" sc="13" el="58" ec="63" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="62" ordinal="10" offset="595" sl="59" sc="13" el="59" ec="50" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="63" ordinal="11" offset="602" sl="62" sc="13" el="62" ec="51" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="64" ordinal="12" offset="615" sl="63" sc="9" el="63" ec="10" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="85" ordinal="0" offset="7" sl="204" sc="9" el="204" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="86" ordinal="1" offset="8" sl="206" sc="13" el="209" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="87" ordinal="2" offset="97" sl="212" sc="13" el="212" ec="51" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="88" ordinal="3" offset="103" sl="213" sc="13" el="213" ec="90" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="89" ordinal="4" offset="197" sl="214" sc="13" el="214" ec="94" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="90" ordinal="5" offset="291" sl="215" sc="13" el="215" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="91" ordinal="6" offset="385" sl="216" sc="13" el="216" ec="110" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="92" ordinal="7" offset="491" sl="219" sc="13" el="219" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="93" ordinal="8" offset="497" sl="220" sc="13" el="220" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="94" ordinal="9" offset="580" sl="222" sc="13" el="222" ec="63" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="95" ordinal="10" offset="592" sl="223" sc="13" el="223" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="96" ordinal="11" offset="604" sl="226" sc="13" el="226" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="97" ordinal="12" offset="682" sl="227" sc="9" el="227" ec="10" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="65" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="98" ordinal="0" offset="0" />
             </Method>
             <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken>100663304</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllTelevisionShows_FromTheDatabase_ReturnAnEmptyList()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="66" ordinal="0" offset="7" sl="67" sc="9" el="67" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="67" ordinal="1" offset="8" sl="69" sc="13" el="69" ec="61" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="68" ordinal="2" offset="25" sl="71" sc="13" el="71" ec="57" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="69" ordinal="3" offset="31" sl="72" sc="13" el="72" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="70" ordinal="4" offset="125" sl="73" sc="13" el="73" ec="100" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="71" ordinal="5" offset="219" sl="74" sc="13" el="74" ec="102" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="72" ordinal="6" offset="313" sl="75" sc="13" el="75" ec="116" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="73" ordinal="7" offset="419" sl="77" sc="13" el="77" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="74" ordinal="8" offset="425" sl="78" sc="13" el="78" ec="75" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="75" ordinal="9" offset="508" sl="81" sc="13" el="81" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="76" ordinal="10" offset="520" sl="82" sc="13" el="82" ec="62" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="77" ordinal="11" offset="527" sl="85" sc="13" el="85" ec="53" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="78" ordinal="12" offset="540" sl="86" sc="9" el="86" ec="10" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="1" uspid="79" ordinal="0" offset="0" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663305</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_GetAllTelevisionShows_FromTheDatabase_ReturnAListOfTwoTelevisionShows()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="80" ordinal="0" offset="7" sl="90" sc="9" el="90" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="81" ordinal="1" offset="8" sl="92" sc="13" el="96" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="82" ordinal="2" offset="223" sl="98" sc="13" el="98" ec="57" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="83" ordinal="3" offset="229" sl="99" sc="13" el="99" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="84" ordinal="4" offset="323" sl="100" sc="13" el="100" ec="100" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="85" ordinal="5" offset="417" sl="101" sc="13" el="101" ec="102" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="86" ordinal="6" offset="511" sl="102" sc="13" el="102" ec="116" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="87" ordinal="7" offset="617" sl="104" sc="13" el="104" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="88" ordinal="8" offset="623" sl="105" sc="13" el="105" ec="75" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="89" ordinal="9" offset="706" sl="108" sc="13" el="108" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="90" ordinal="10" offset="718" sl="109" sc="13" el="109" ec="62" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="91" ordinal="11" offset="725" sl="112" sc="13" el="112" ec="53" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="92" ordinal="12" offset="738" sl="113" sc="9" el="113" ec="10" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="1" uspid="93" ordinal="0" offset="0" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663306</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesAUsernameWhenSubscriptionIsExpired_SavesToDatabase()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="94" ordinal="0" offset="7" sl="148" sc="9" el="148" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="95" ordinal="1" offset="8" sl="150" sc="13" el="153" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="96" ordinal="2" offset="56" sl="156" sc="13" el="156" ec="55" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="97" ordinal="3" offset="62" sl="157" sc="13" el="157" ec="94" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="98" ordinal="4" offset="156" sl="158" sc="13" el="158" ec="98" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="99" ordinal="5" offset="250" sl="159" sc="13" el="159" ec="100" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="100" ordinal="6" offset="344" sl="160" sc="13" el="160" ec="114" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="101" ordinal="7" offset="450" sl="163" sc="13" el="163" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="102" ordinal="8" offset="456" sl="164" sc="13" el="164" ec="73" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="103" ordinal="9" offset="539" sl="166" sc="13" el="166" ec="67" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="104" ordinal="10" offset="551" sl="167" sc="13" el="167" ec="40" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="105" ordinal="11" offset="563" sl="170" sc="13" el="170" ec="54" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="106" ordinal="12" offset="641" sl="171" sc="9" el="171" ec="10" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="1" uspid="107" ordinal="0" offset="0" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663307</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesTwoUsernamesWhenSubscriptionIsExpired_SavesToDatabase()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="108" ordinal="0" offset="7" sl="175" sc="9" el="175" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="109" ordinal="1" offset="8" sl="177" sc="13" el="182" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="110" ordinal="2" offset="85" sl="185" sc="13" el="185" ec="55" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="111" ordinal="3" offset="91" sl="186" sc="13" el="186" ec="94" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="112" ordinal="4" offset="185" sl="187" sc="13" el="187" ec="98" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="113" ordinal="5" offset="279" sl="188" sc="13" el="188" ec="100" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="114" ordinal="6" offset="373" sl="189" sc="13" el="189" ec="114" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="115" ordinal="7" offset="479" sl="192" sc="13" el="192" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="116" ordinal="8" offset="485" sl="193" sc="13" el="193" ec="73" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="117" ordinal="9" offset="568" sl="195" sc="13" el="195" ec="67" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="118" ordinal="10" offset="580" sl="196" sc="13" el="196" ec="40" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="119" ordinal="11" offset="592" sl="199" sc="13" el="199" ec="54" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="120" ordinal="12" offset="670" sl="200" sc="9" el="200" ec="10" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="1" uspid="121" ordinal="0" offset="0" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663308</MetadataToken>
-              <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesAFilmFromMediaLibraray_SavesToDatabase()</Name>
-              <FileRef uid="2" />
-              <SequencePoints>
-                <SequencePoint vc="1" uspid="122" ordinal="0" offset="7" sl="204" sc="9" el="204" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="123" ordinal="1" offset="8" sl="206" sc="13" el="209" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="124" ordinal="2" offset="97" sl="212" sc="13" el="212" ec="51" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="125" ordinal="3" offset="103" sl="213" sc="13" el="213" ec="90" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="126" ordinal="4" offset="197" sl="214" sc="13" el="214" ec="94" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="127" ordinal="5" offset="291" sl="215" sc="13" el="215" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="128" ordinal="6" offset="385" sl="216" sc="13" el="216" ec="110" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="129" ordinal="7" offset="491" sl="219" sc="13" el="219" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="130" ordinal="8" offset="497" sl="220" sc="13" el="220" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="131" ordinal="9" offset="580" sl="222" sc="13" el="222" ec="63" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="132" ordinal="10" offset="592" sl="223" sc="13" el="223" ec="47" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="133" ordinal="11" offset="604" sl="226" sc="13" el="226" ec="54" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="134" ordinal="12" offset="682" sl="227" sc="9" el="227" ec="10" bec="0" bev="0" fileid="2" />
-              </SequencePoints>
-              <BranchPoints />
-              <MethodPoint vc="1" uspid="135" ordinal="0" offset="0" />
-            </Method>
-            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
-              <MetadataToken>100663309</MetadataToken>
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::Test_DeletesATVShowFromMediaLibraray_SavesToDatabase()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="136" ordinal="0" offset="7" sl="231" sc="9" el="231" ec="10" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="137" ordinal="1" offset="8" sl="233" sc="13" el="236" ec="29" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="138" ordinal="2" offset="123" sl="239" sc="13" el="239" ec="57" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="139" ordinal="3" offset="129" sl="240" sc="13" el="240" ec="96" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="140" ordinal="4" offset="223" sl="241" sc="13" el="241" ec="100" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="141" ordinal="5" offset="317" sl="242" sc="13" el="242" ec="102" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="142" ordinal="6" offset="411" sl="243" sc="13" el="243" ec="116" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="143" ordinal="7" offset="517" sl="246" sc="13" el="246" ec="66" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="144" ordinal="8" offset="523" sl="247" sc="13" el="247" ec="75" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="145" ordinal="9" offset="606" sl="249" sc="13" el="249" ec="69" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="146" ordinal="10" offset="618" sl="250" sc="13" el="250" ec="41" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="147" ordinal="11" offset="630" sl="253" sc="13" el="253" ec="54" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="148" ordinal="12" offset="708" sl="254" sc="9" el="254" ec="10" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="99" ordinal="0" offset="7" sl="231" sc="9" el="231" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="100" ordinal="1" offset="8" sl="233" sc="13" el="236" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="101" ordinal="2" offset="123" sl="239" sc="13" el="239" ec="57" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="102" ordinal="3" offset="129" sl="240" sc="13" el="240" ec="96" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="103" ordinal="4" offset="223" sl="241" sc="13" el="241" ec="100" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="104" ordinal="5" offset="317" sl="242" sc="13" el="242" ec="102" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="105" ordinal="6" offset="411" sl="243" sc="13" el="243" ec="116" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="106" ordinal="7" offset="517" sl="246" sc="13" el="246" ec="66" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="107" ordinal="8" offset="523" sl="247" sc="13" el="247" ec="75" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="108" ordinal="9" offset="606" sl="249" sc="13" el="249" ec="69" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="109" ordinal="10" offset="618" sl="250" sc="13" el="250" ec="41" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="110" ordinal="11" offset="630" sl="253" sc="13" el="253" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="111" ordinal="12" offset="708" sl="254" sc="9" el="254" ec="10" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="1" uspid="149" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="112" ordinal="0" offset="0" />
             </Method>
             <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
-              <MetadataToken>100663310</MetadataToken>
+              <MetadataToken>100663305</MetadataToken>
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="8" uspid="150" ordinal="0" offset="0" />
+              <MethodPoint vc="8" uspid="113" ordinal="0" offset="0" />
             </Method>
           </Methods>
         </Class>
@@ -407,18 +317,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="151" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="114" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663324</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.film&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1::&lt;Test_GetAllFilms_FromTheDatabase_ReturnAnEmptyList&gt;b__0()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="152" ordinal="0" offset="0" sl="25" sc="88" el="25" ec="108" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="115" ordinal="0" offset="0" sl="25" sc="88" el="25" ec="108" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="152" ordinal="0" offset="0" sl="25" sc="88" el="25" ec="108" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="115" ordinal="0" offset="0" sl="25" sc="88" el="25" ec="108" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -432,18 +342,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass6::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="153" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="116" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663326</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.film&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass6::&lt;Test_GetAllFilms_FromTheDatabase_ReturnAListOfOneFilm&gt;b__5()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="154" ordinal="0" offset="0" sl="52" sc="88" el="52" ec="108" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="117" ordinal="0" offset="0" sl="52" sc="88" el="52" ec="108" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="154" ordinal="0" offset="0" sl="52" sc="88" el="52" ec="108" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="117" ordinal="0" offset="0" sl="52" sc="88" el="52" ec="108" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -457,18 +367,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass9::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="155" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="118" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663328</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.television&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass9::&lt;Test_GetAllTelevisionShows_FromTheDatabase_ReturnAnEmptyList&gt;b__8()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="156" ordinal="0" offset="0" sl="75" sc="94" el="75" ec="114" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="119" ordinal="0" offset="0" sl="75" sc="94" el="75" ec="114" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="156" ordinal="0" offset="0" sl="75" sc="94" el="75" ec="114" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="119" ordinal="0" offset="0" sl="75" sc="94" el="75" ec="114" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -482,18 +392,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClassf::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="157" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="120" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663330</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.television&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClassf::&lt;Test_GetAllTelevisionShows_FromTheDatabase_ReturnAListOfTwoTelevisionShows&gt;b__e()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="158" ordinal="0" offset="0" sl="102" sc="94" el="102" ec="114" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="121" ordinal="0" offset="0" sl="102" sc="94" el="102" ec="114" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="158" ordinal="0" offset="0" sl="102" sc="94" el="102" ec="114" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="121" ordinal="0" offset="0" sl="102" sc="94" el="102" ec="114" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -507,18 +417,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass14::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="159" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="122" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663332</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.username&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass14::&lt;Test_DeletesAUsernameWhenSubscriptionIsExpired_SavesToDatabase&gt;b__13()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="160" ordinal="0" offset="0" sl="160" sc="92" el="160" ec="112" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="123" ordinal="0" offset="0" sl="160" sc="92" el="160" ec="112" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="160" ordinal="0" offset="0" sl="160" sc="92" el="160" ec="112" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="123" ordinal="0" offset="0" sl="160" sc="92" el="160" ec="112" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -532,18 +442,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1a::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="161" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="124" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663334</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.username&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1a::&lt;Test_DeletesTwoUsernamesWhenSubscriptionIsExpired_SavesToDatabase&gt;b__19()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="162" ordinal="0" offset="0" sl="189" sc="92" el="189" ec="112" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="125" ordinal="0" offset="0" sl="189" sc="92" el="189" ec="112" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="162" ordinal="0" offset="0" sl="189" sc="92" el="189" ec="112" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="125" ordinal="0" offset="0" sl="189" sc="92" el="189" ec="112" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -557,18 +467,18 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1f::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="163" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="126" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663336</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.film&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass1f::&lt;Test_DeletesAFilmFromMediaLibraray_SavesToDatabase&gt;b__1e()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="164" ordinal="0" offset="0" sl="216" sc="88" el="216" ec="108" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="127" ordinal="0" offset="0" sl="216" sc="88" el="216" ec="108" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="164" ordinal="0" offset="0" sl="216" sc="88" el="216" ec="108" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="127" ordinal="0" offset="0" sl="216" sc="88" el="216" ec="108" bec="0" bev="0" fileid="1" />
             </Method>
           </Methods>
         </Class>
@@ -582,18 +492,108 @@
               <Name>System.Void VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass24::.ctor()</Name>
               <SequencePoints />
               <BranchPoints />
-              <MethodPoint vc="1" uspid="165" ordinal="0" offset="0" />
+              <MethodPoint vc="1" uspid="128" ordinal="0" offset="0" />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100663338</MetadataToken>
               <Name>System.Collections.Generic.IEnumerator`1&lt;VideosOnDemandEntityDatabase.television&gt; VideosOnDemandProjectTestsDay1.QueryTests/&lt;&gt;c__DisplayClass24::&lt;Test_DeletesATVShowFromMediaLibraray_SavesToDatabase&gt;b__23()</Name>
-              <FileRef uid="2" />
+              <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="166" ordinal="0" offset="0" sl="243" sc="94" el="243" ec="114" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="129" ordinal="0" offset="0" sl="243" sc="94" el="243" ec="114" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="166" ordinal="0" offset="0" sl="243" sc="94" el="243" ec="114" bec="0" bev="0" fileid="2" />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="129" ordinal="0" offset="0" sl="243" sc="94" el="243" ec="114" bec="0" bev="0" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="36" visitedSequencePoints="36" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>VideosOnDemandProjectTestsDay1.NonQueryTests</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_CreatesAUsernameWithSubscription_SavesToDatabase()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="130" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="131" ordinal="1" offset="1" sl="17" sc="13" el="17" ec="55" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="132" ordinal="2" offset="7" sl="18" sc="13" el="18" ec="66" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="133" ordinal="3" offset="13" sl="19" sc="13" el="19" ec="73" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="134" ordinal="4" offset="93" sl="22" sc="13" el="22" ec="67" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="135" ordinal="5" offset="105" sl="23" sc="13" el="23" ec="54" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="136" ordinal="6" offset="122" sl="26" sc="13" el="26" ec="74" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="137" ordinal="7" offset="249" sl="27" sc="13" el="27" ec="54" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="138" ordinal="8" offset="324" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="130" ordinal="0" offset="0" sl="15" sc="9" el="15" ec="10" bec="0" bev="0" fileid="10" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_CreatesAUsernameWithoutSubscription_SavesToDatabase()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="139" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="140" ordinal="1" offset="1" sl="34" sc="13" el="34" ec="55" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="141" ordinal="2" offset="7" sl="35" sc="13" el="35" ec="66" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="142" ordinal="3" offset="13" sl="36" sc="13" el="36" ec="73" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="143" ordinal="4" offset="93" sl="39" sc="13" el="39" ec="67" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="144" ordinal="5" offset="105" sl="40" sc="13" el="40" ec="56" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="145" ordinal="6" offset="122" sl="43" sc="13" el="43" ec="74" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="146" ordinal="7" offset="249" sl="44" sc="13" el="44" ec="54" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="147" ordinal="8" offset="324" sl="45" sc="9" el="45" ec="10" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="139" ordinal="0" offset="0" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="10" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_AddFilmToTheDatabase_SavesToDatabase()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="148" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="149" ordinal="1" offset="1" sl="51" sc="13" el="51" ec="51" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="150" ordinal="2" offset="7" sl="52" sc="13" el="52" ec="66" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="151" ordinal="3" offset="13" sl="53" sc="13" el="53" ec="69" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="152" ordinal="4" offset="93" sl="57" sc="13" el="57" ec="63" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="153" ordinal="5" offset="105" sl="58" sc="13" el="58" ec="83" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="154" ordinal="6" offset="132" sl="61" sc="13" el="61" ec="70" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="155" ordinal="7" offset="259" sl="62" sc="13" el="62" ec="54" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="156" ordinal="8" offset="334" sl="64" sc="9" el="64" ec="10" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="148" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="10" bec="0" bev="0" fileid="10" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::Test_AddTVShowToTheDatabase_SavesToDatabase()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="157" ordinal="0" offset="0" sl="68" sc="9" el="68" ec="10" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="158" ordinal="1" offset="1" sl="70" sc="13" el="70" ec="57" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="159" ordinal="2" offset="7" sl="71" sc="13" el="71" ec="66" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="160" ordinal="3" offset="13" sl="72" sc="13" el="72" ec="75" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="161" ordinal="4" offset="93" sl="76" sc="13" el="76" ec="69" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="162" ordinal="5" offset="105" sl="77" sc="13" el="77" ec="83" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="163" ordinal="6" offset="132" sl="80" sc="13" el="80" ec="76" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="164" ordinal="7" offset="259" sl="81" sc="13" el="81" ec="54" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="1" uspid="165" ordinal="8" offset="334" sl="83" sc="9" el="83" ec="10" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="157" ordinal="0" offset="0" sl="68" sc="9" el="68" ec="10" bec="0" bev="0" fileid="10" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Void VideosOnDemandProjectTestsDay1.NonQueryTests::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="166" ordinal="0" offset="0" />
             </Method>
           </Methods>
         </Class>
@@ -801,41 +801,6 @@
     <Module skippedDueTo="MissingPdb" hash="87-C9-BA-8D-5D-BC-48-A2-9A-EE-A2-4C-0D-24-85-14-7E-47-C9-50">
       <FullName>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies\Microsoft.VisualStudio.TeamSystem.Licensing.dll</FullName>
       <ModuleName>Microsoft.VisualStudio.TeamSystem.Licensing</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="MissingPdb" hash="5C-82-3D-6B-CB-03-C8-CD-BF-6F-93-63-77-3D-AB-42-83-8E-5F-E4">
-      <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\videosondemandprojecttestsday1\bin\debug\Moq.dll</FullName>
-      <ModuleName>Moq</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="MissingPdb" hash="40-DF-C1-DD-A4-B1-9F-2E-54-48-25-81-A5-A2-59-19-8D-83-7B-5C">
-      <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\videosondemandprojecttestsday1\bin\debug\EntityFramework.dll</FullName>
-      <ModuleName>EntityFramework</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="Filter" hash="60-C8-FF-7B-E6-2A-F6-A7-F3-18-24-A4-36-6B-13-4B-C6-C4-06-7D">
-      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</FullName>
-      <ModuleName>System.Runtime.Serialization</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="Filter" hash="71-83-0E-91-DD-BF-F2-47-0D-09-4B-ED-AC-0D-81-90-FF-F3-A6-14">
-      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</FullName>
-      <ModuleName>System.ComponentModel.DataAnnotations</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="Filter" hash="73-40-A6-9D-16-C6-DF-C1-8A-0D-DF-A3-12-EB-64-2A-78-45-DE-64">
-      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll</FullName>
-      <ModuleName>System.Transactions</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="Filter" hash="C4-D3-3B-C9-10-33-92-27-DC-BE-0A-DC-E7-CF-76-6A-A0-54-23-D8">
-      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</FullName>
-      <ModuleName>System.Xml.Linq</ModuleName>
-      <Classes />
-    </Module>
-    <Module skippedDueTo="MissingPdb" hash="A5-A7-20-12-87-C4-5A-E5-08-10-C1-D7-7B-B5-AB-F9-0F-A6-71-CD">
-      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll</FullName>
-      <ModuleName>Microsoft.CSharp</ModuleName>
       <Classes />
     </Module>
     <Module hash="7B-C8-AE-43-F1-FB-A9-05-5C-AF-8F-2B-79-7F-29-89-B4-1B-00-5D">
@@ -1923,7 +1888,42 @@
         </Class>
       </Classes>
     </Module>
-    <Module hash="2B-1F-6F-DE-A1-FE-11-E9-C5-FB-F7-71-51-11-A4-0D-BD-BE-5A-5C">
+    <Module skippedDueTo="MissingPdb" hash="40-DF-C1-DD-A4-B1-9F-2E-54-48-25-81-A5-A2-59-19-8D-83-7B-5C">
+      <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\videosondemandprojecttestsday1\bin\debug\EntityFramework.dll</FullName>
+      <ModuleName>EntityFramework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="60-C8-FF-7B-E6-2A-F6-A7-F3-18-24-A4-36-6B-13-4B-C6-C4-06-7D">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</FullName>
+      <ModuleName>System.Runtime.Serialization</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="71-83-0E-91-DD-BF-F2-47-0D-09-4B-ED-AC-0D-81-90-FF-F3-A6-14">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</FullName>
+      <ModuleName>System.ComponentModel.DataAnnotations</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="73-40-A6-9D-16-C6-DF-C1-8A-0D-DF-A3-12-EB-64-2A-78-45-DE-64">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll</FullName>
+      <ModuleName>System.Transactions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C4-D3-3B-C9-10-33-92-27-DC-BE-0A-DC-E7-CF-76-6A-A0-54-23-D8">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</FullName>
+      <ModuleName>System.Xml.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A5-A7-20-12-87-C4-5A-E5-08-10-C1-D7-7B-B5-AB-F9-0F-A6-71-CD">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll</FullName>
+      <ModuleName>Microsoft.CSharp</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5C-82-3D-6B-CB-03-C8-CD-BF-6F-93-63-77-3D-AB-42-83-8E-5F-E4">
+      <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\videosondemandprojecttestsday1\bin\debug\Moq.dll</FullName>
+      <ModuleName>Moq</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="B6-D7-BA-C2-E2-93-76-12-BD-A1-D5-96-37-8B-51-1F-E0-27-F7-7C">
       <Summary numSequencePoints="108" visitedSequencePoints="89" numBranchPoints="40" visitedBranchPoints="32" sequenceCoverage="82.41" branchCoverage="80" maxCyclomaticComplexity="9" minCyclomaticComplexity="1" visitedClasses="7" numClasses="8" visitedMethods="19" numMethods="22" />
       <FullName>C:\Users\abel.ghebrezadik\Documents\C# Workspace\VideoProject\VideoOnDemandProject\videosondemandprojecttestsday1\bin\debug\VideoOnDemandProjectDay1.exe</FullName>
       <ModuleName>VideoOnDemandProjectDay1</ModuleName>
@@ -2456,14 +2456,14 @@
       <ModuleName>Microsoft.VisualStudio.PerformanceTools.DataCollection.Editor</ModuleName>
       <Classes />
     </Module>
-    <Module skippedDueTo="MissingPdb" hash="">
-      <FullName>RefEmit_InMemoryManifestModule</FullName>
-      <ModuleName>DynamicProxyGenAssembly2</ModuleName>
-      <Classes />
-    </Module>
     <Module skippedDueTo="Filter" hash="8F-62-B4-14-21-CF-C8-F6-52-4B-B9-60-24-2C-44-65-02-24-EC-5A">
       <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</FullName>
       <ModuleName>System.Windows.Forms</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="">
+      <FullName>RefEmit_InMemoryManifestModule</FullName>
+      <ModuleName>DynamicProxyGenAssembly2</ModuleName>
       <Classes />
     </Module>
     <Module skippedDueTo="Filter" hash="01-51-20-E0-0E-42-28-87-DB-68-07-64-21-3F-DF-47-B4-77-2B-D6">
